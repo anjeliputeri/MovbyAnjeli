@@ -1,33 +1,42 @@
 {
   "project_info": {
-    "project_number": "634834677050",
-    "project_id": "mov-project-ba57e",
-    "storage_bucket": "mov-project-ba57e.appspot.com"
+    "project_number": "712858568120",
+    "firebase_url": "https://mov-jeli-default-rtdb.firebaseio.com",
+    "project_id": "mov-jeli",
+    "storage_bucket": "mov-jeli.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:634834677050:android:5c81a4fbf54449334fb403",
+        "mobilesdk_app_id": "1:712858568120:android:1da8a2649783d581e67b4d",
         "android_client_info": {
           "package_name": "com.app.mov"
         }
       },
       "oauth_client": [
         {
-          "client_id": "634834677050-8v7nmt522o4db9hum7l43i8vlp11dcjc.apps.googleusercontent.com",
+          "client_id": "712858568120-57sg56gtakpdo60n9tfghpaa1dlks3d4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.mov",
+            "certificate_hash": "7032366b4751d9bcc878029ac02493c1512d1699"
+          }
+        },
+        {
+          "client_id": "712858568120-dqltq15ips1j4o53t04adbqiosqgv59c.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCxOKXBCVidBHeI_M_zeoVjUdTn2VkqJFE"
+          "current_key": "AIzaSyBr2QrimGbgQb3-OT0Rl6r7Jvq3-4peVHQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "634834677050-8v7nmt522o4db9hum7l43i8vlp11dcjc.apps.googleusercontent.com",
+              "client_id": "712858568120-dqltq15ips1j4o53t04adbqiosqgv59c.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

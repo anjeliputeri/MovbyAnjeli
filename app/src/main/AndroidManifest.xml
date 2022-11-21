@@ -5,8 +5,13 @@
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
     <uses-permission-sdk-23 android:name="android.permission.INTERNET"/>
     <uses-permission-sdk-23 android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission-sdk-23 android:name="android.permission.CAMERA"/>
+
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true"/>
 
     <application
         android:allowBackup="true"
@@ -21,9 +26,13 @@
         <activity
             android:name=".DetailActivity"
             android:exported="false" />
-        <activity
-            android:name=".HomeActivity"
-            android:exported="false" />
+        <activity android:name=".home.HomeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
         <activity
             android:name=".onboarding.OnboardingOneActivity"
             android:exported="false" />
@@ -34,13 +43,13 @@
             android:name=".onboarding.OnboardingThreeActivity"
             android:exported="false" />
         <activity
-            android:name=".sign.SignInActivity"
+            android:name=".signs.signin.SignInActivity"
             android:exported="true" />
         <activity
-            android:name=".sign.SignUpActivity"
+            android:name=".signs.signup.SignUpActivity"
             android:exported="true" />
         <activity
-            android:name=".sign.SignUpPhotoscreenActivity"
+            android:name=".signs.signup.SignUpPhotoscreenActivity"
             android:exported="true" />
         <activity
             android:name=".SplashScreenActivity"

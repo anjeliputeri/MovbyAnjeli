@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".onboarding.OnboardingOneActivity"
+    tools:context=".signs.signup.SignUpPhotoscreenActivity"
     android:background="@color/blue">
 
     <Button
@@ -22,6 +22,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
+        android:id="@+id/Bsave"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -63,7 +64,7 @@
         android:gravity="center"/>
 
     <TextView
-        android:id="@+id/Tusername"
+        android:id="@+id/Twelcome"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
@@ -76,13 +77,25 @@
         android:textColor="@color/white"/>
 
     <ImageView
+        android:id="@+id/photoSign"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:src="@drawable/user_pic"
+        android:src="@drawable/ic_photouser"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/addSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_baseline_add_photo"
+        app:layout_constraintRight_toRightOf="@id/photoSign"
+        app:layout_constraintBottom_toBottomOf="@id/photoSign"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="280dp"
+        android:background="@drawable/shape_eclipse_lightblue"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

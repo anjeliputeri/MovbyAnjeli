@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import com.app.mov.R
-import com.app.mov.sign.SignInActivity
+import com.app.mov.signs.signin.SignInActivity
 
 class OnboardingThreeActivity : AppCompatActivity() {
     lateinit var Blewati3 : Button
@@ -17,7 +17,7 @@ class OnboardingThreeActivity : AppCompatActivity() {
 
         Blewati3.setOnClickListener {
             finishAffinity()
-            startActivity(Intent(this,SignInActivity::class.java))
+            startActivity(Intent(this, SignInActivity::class.java))
         }
     }
 }

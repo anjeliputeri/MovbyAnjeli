@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".sign.SignInActivity"
+    tools:context=".signs.signin.SignInActivity"
     android:background="@color/blue">
 
     <Button
@@ -15,7 +15,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="24dp"
         android:background="@drawable/shape_rectangle_blue_grey"
-        android:text="@string/lewati_perkenalan"
+        android:text="@string/daftar_akun_baru"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,7 +29,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/shape_rectangle_pink"
-        android:text="@string/lanjutkan"
+        android:text="@string/masuk_akun"
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/BLewati"
         app:layout_constraintEnd_toEndOf="parent"
@@ -80,14 +80,14 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="@color/white"
-        android:hint="username"
+        android:ems="10"
         android:inputType="textPersonName"
         android:textColor="@color/white"
         android:textColorHint="@color/whiteGrey"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Tusername"
-        tools:ignore="TouchTargetSizeCheck" />
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/Tpassword"
