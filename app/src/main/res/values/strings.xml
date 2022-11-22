@@ -55,4 +55,7 @@
     <string name="daftar_akun_baru">daftar akun baru</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="rate7">7</string>
+    <string name="tittle">Tittle</string>
+    <string name="genre">Genre</string>
 </resources>

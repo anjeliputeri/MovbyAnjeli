@@ -5,11 +5,14 @@ import android.os.Bundle
 import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import com.app.mov.R
+import com.app.mov.home.dashboard.DashboardFragment
 
- class HomeActivity : AppCompatActivity() {
+
+ class HomeActivity : AppCompatActivity(){
      lateinit var menu1: ImageView
      lateinit var menu2: ImageView
      lateinit var menu3: ImageView
+
 
      override fun onCreate(savedInstanceState: Bundle?) {
          super.onCreate(savedInstanceState)
