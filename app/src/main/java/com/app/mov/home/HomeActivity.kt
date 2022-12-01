@@ -2,6 +2,7 @@
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import com.app.mov.R
@@ -13,9 +14,10 @@ import com.app.mov.home.dashboard.DashboardFragment
      lateinit var menu2: ImageView
      lateinit var menu3: ImageView
 
-
      override fun onCreate(savedInstanceState: Bundle?) {
          super.onCreate(savedInstanceState)
+         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
+         actionBar?.hide()
          setContentView(R.layout.activity_home)
 
          menu1 = findViewById<ImageView>(R.id.iv_menu1)

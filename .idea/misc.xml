@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Mov/app/src/main/res/drawable-v24/shape_eclipse_lightblue.xml" value="0.1" />
         <entry key="..\:/Mov/app/src/main/res/drawable-v24/shape_eclipse_white.xml" value="0.172" />
         <entry key="..\:/Mov/app/src/main/res/drawable-v24/shape_rectangle_blue_grey.xml" value="0.1" />
         <entry key="..\:/Mov/app/src/main/res/drawable/ic_account_balance_wallet_24px.xml" value="0.179" />
@@ -33,9 +34,10 @@
         <entry key="..\:/Mov/app/src/main/res/layout/activity_sign_up.xml" value="0.264" />
         <entry key="..\:/Mov/app/src/main/res/layout/activity_sign_up_photoscreen.xml" value="0.16" />
         <entry key="..\:/Mov/app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
-        <entry key="..\:/Mov/app/src/main/res/layout/fragment_dashboard.xml" value="0.264" />
+        <entry key="..\:/Mov/app/src/main/res/layout/fragment_dashboard.xml" value="0.1" />
         <entry key="..\:/Mov/app/src/main/res/layout/fragment_setting.xml" value="0.1421875" />
         <entry key="..\:/Mov/app/src/main/res/layout/fragment_tiket.xml" value="0.1671195652173913" />
+        <entry key="..\:/Mov/app/src/main/res/layout/row_item_coming_soon.xml" value="0.1" />
         <entry key="..\:/Mov/app/src/main/res/layout/row_item_now_playing.xml" value="0.536" />
       </map>
     </option>

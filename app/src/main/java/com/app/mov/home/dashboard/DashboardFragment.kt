@@ -71,11 +71,9 @@ class DashboardFragment : Fragment() {
         preferences = Preferences(requireActivity().applicationContext)
         mDatabaseReference = FirebaseDatabase.getInstance().getReference("Film")
 
-
         tv_nama.setText(preferences.getValues("nama"))
-        if (!preferences.getValues("saldo").equals("")) {
-            //currency(preferences.getValues("saldo")!!.toDouble(), tv_saldo)
-            tv_saldo.setText(preferences.getValues("saldo"))
+        if (preferences.getValues("saldo") != "") {
+            currency(preferences.getValues("saldo")!!.toDouble(), tv_saldo)
         }
         Glide.with(this)
             .load(preferences.getValues("url"))
@@ -102,9 +100,9 @@ class DashboardFragment : Fragment() {
 
                 }
 
-//                rv_coming_soon.adapter = ComingSoonAdapter(dataList) {
-//
-//                }
+                rv_coming_soon.adapter = ComingSoonAdapter(dataList) {
+
+                }
             }
 
             override fun onCancelled(databaseError: DatabaseError) {
