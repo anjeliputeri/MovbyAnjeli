@@ -1,5 +1,6 @@
 package com.app.mov.home.dashboard
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -11,6 +12,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.app.mov.DetailActivity
 import com.app.mov.R
 import com.app.mov.model.Film
 import com.app.mov.util.Preferences
@@ -97,10 +99,14 @@ class DashboardFragment : Fragment() {
                 }
 
                 rv_now_playing.adapter = NowPlayingAdapter(dataList) {
+                    var intent = Intent(context, DetailActivity::class.java).putExtra("data", it)
+                    startActivity(intent)
 
                 }
 
                 rv_coming_soon.adapter = ComingSoonAdapter(dataList) {
+                    var intent = Intent(context, DetailActivity::class.java).putExtra("data", it)
+                    startActivity(intent)
 
                 }
             }
