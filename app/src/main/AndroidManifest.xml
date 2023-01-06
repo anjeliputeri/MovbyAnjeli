@@ -3,15 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.app.mov">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-permission-sdk-23 android:name="android.permission.INTERNET"/>
-    <uses-permission-sdk-23 android:name="android.permission.ACCESS_WIFI_STATE"/>
-    <uses-permission-sdk-23 android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
-    <uses-feature android:name="android.hardware.camera"
-        android:required="true"/>
+    <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission-sdk-23 android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
 
     <application
         android:allowBackup="true"
@@ -35,9 +37,9 @@
         <activity
             android:name=".DetailActivity"
             android:exported="false" />
-        <activity android:name=".home.HomeActivity"
-            android:exported="true">
-        </activity>
+        <activity
+            android:name=".home.HomeActivity"
+            android:exported="true" />
         <activity
             android:name=".onboarding.OnboardingOneActivity"
             android:exported="false" />
@@ -56,6 +58,15 @@
         <activity
             android:name=".signs.signup.SignUpPhotoscreenActivity"
             android:exported="true" />
+        <activity
+            android:name=".checkout.PilihBangkuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".checkout.CheckoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".checkout.CheckoutSuccessActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

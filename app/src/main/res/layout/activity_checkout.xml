@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".onboarding.OnboardingOneActivity"
+    tools:context=".checkout.CheckoutActivity"
     android:background="@color/blue">
 
     <Button
@@ -15,7 +15,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="24dp"
         android:background="@drawable/shape_rectangle_blue_grey"
-        android:text="@string/batalkan"
+        android:text="Batalkan"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/shape_rectangle_pink"
         android:text="Bayar Sekarang"
         android:textColor="@color/white"
@@ -133,74 +133,14 @@
         android:textColor="@color/white"
         android:textSize="18sp"/>
 
-    <TextView
-        android:id="@+id/Tseatc1"
-        android:layout_width="wrap_content"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvITems"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/seat_no_c1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Titems"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:textColor="@color/whiteGrey"
-        android:drawableLeft="@drawable/ic_seat"
-        android:drawablePadding="10dp"/>
-
-    <TextView
-        android:id="@+id/Tidrs1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:textColor="@color/white"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Titems"
-        tools:text="IDR 70.000" />
-
-    <TextView
-        android:id="@+id/Tseatc2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/seat_no_c2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Tidrs1"
-        android:layout_marginStart="16dp"
-        android:textColor="@color/whiteGrey"
-        android:drawableLeft="@drawable/ic_seat"
-        android:drawablePadding="10dp"/>
-
-    <TextView
-        android:id="@+id/Tidrs2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Tidrs1"
-        tools:text="IDR 70.000" />
-
-    <TextView
-        android:id="@+id/Ttotal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/total_harus_dibayar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Tseatc2"
-        android:layout_marginStart="46dp"
-        android:textColor="@color/whiteGrey"/>
-
-    <TextView
-        android:id="@+id/Tidr"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Tidrs2"
-        tools:text="IDR 140.000"/>
+        app:layout_constraintTop_toBottomOf="@+id/Titems"/>
 
     <TextView
         android:id="@+id/Te_wallet"
@@ -208,7 +148,7 @@
         android:layout_height="wrap_content"
         android:text="E-Wallet"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Ttotal"
+        app:layout_constraintTop_toBottomOf="@+id/rvITems"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:textColor="@color/white"
