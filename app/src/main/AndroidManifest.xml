@@ -67,6 +67,9 @@
         <activity
             android:name=".checkout.CheckoutSuccessActivity"
             android:exported="false" />
+        <activity
+            android:name=".tiket.TiketActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

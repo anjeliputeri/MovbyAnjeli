@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_background_blue"
+    tools:context=".tiket.TiketActivity">
+
+    <ImageView
+        android:id="@+id/iBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_baseline_arrow_back_white_24"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:src="@color/whiteGrey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_barcode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="16dp"
+        android:text="Scan QR"
+        android:fontFamily="@font/montserrat"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tScan"
+        android:layout_marginStart="24dp"
+        android:textSize="18sp"
+        android:text="Quick Print"
+        android:fontFamily="@font/montserrat"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="440dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iBack"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/shape_rectangle_white">
+
+        <ImageView
+            android:id="@+id/iTiket"
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            tools:src = "@tools:sample/avatars"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_tittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/tittle"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/iTiket"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_genre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/iTiket"
+            app:layout_constraintTop_toBottomOf="@id/tv_tittle"
+            android:text="Genre"
+            android:layout_marginStart="32dp"/>
+
+        <TextView
+            android:id="@+id/tv_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/iTiket"
+            app:layout_constraintTop_toBottomOf="@id/tv_genre"
+            android:text="Rate"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/ic_star_24px"
+            android:drawablePadding="10dp"/>
+
+        <TextView
+            android:id="@+id/tWhen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/iTiket"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="42dp"
+            android:text="When"/>
+
+        <TextView
+            android:id="@+id/tDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tWhen"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:drawableStart="@drawable/ic_calendar"
+            android:drawablePadding="10dp"
+            android:text="Date and Time"/>
+
+        <TextView
+            android:id="@+id/tCinemaTiket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tDate"
+            android:drawableStart="@drawable/ic_movies"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:drawablePadding="10dp"
+            android:text="Cinema"/>
+
+        <TextView
+            android:id="@+id/tAug"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tWhen"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:text="12 Aug, 10 AM"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tDate"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="Depok mall, Cinema 3"
+            android:textStyle="bold"/>
+        
+        <TextView
+            android:id="@+id/tTiket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tCinemaTiket"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rc_checkout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tTiket"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        
+
+
+
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
