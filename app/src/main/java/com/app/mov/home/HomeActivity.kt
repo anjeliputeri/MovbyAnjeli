@@ -7,6 +7,7 @@ import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import com.app.mov.R
 import com.app.mov.home.dashboard.DashboardFragment
+import com.app.mov.setting.SettingFragment
 import com.app.mov.tiket.TiketFragment
 
 
