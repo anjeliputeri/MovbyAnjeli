@@ -1,4 +1,4 @@
-# MovbyAnjeli
+# Mov
 ini adalah aplikasi pemesanan tiket bioskop
 
 ## Fiture
