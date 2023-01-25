@@ -1,5 +1,5 @@
 # Mov
-ini adalah aplikasi pemesanan tiket bioskop
+This is a mobile application for movie reservation
 
 ## Fiture
 1. Splashscreen
