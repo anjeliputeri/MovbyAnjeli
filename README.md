@@ -1,5 +1,5 @@
 # Mov
-This is a mobile application for movie reservation
+Mov App is a movie ticket reservation application. Mov App is to provide convenience to cinema-goers by eliminating the need to queue for tickets at the cinema. Users can also view the list of upcoming movies in the Mov App.
 
 ## Fiture
 1. Splashscreen
