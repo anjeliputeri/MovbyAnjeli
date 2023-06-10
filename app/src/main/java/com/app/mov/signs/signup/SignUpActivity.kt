@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.Toast
 import com.app.mov.R
+import com.app.mov.signs.signin.SignInActivity
 import com.app.mov.signs.signin.User
 import com.google.firebase.database.*
 
@@ -16,6 +18,7 @@ import com.google.firebase.database.*
      lateinit var sPassword : EditText
      lateinit var sNama : EditText
      lateinit var sEmail : EditText
+     lateinit var toSignIn :ImageView
 
      lateinit var mDatabaseReference: DatabaseReference
      lateinit var mFirebaseInstance : FirebaseDatabase
@@ -34,6 +37,12 @@ import com.google.firebase.database.*
         sPassword = findViewById<EditText>(R.id.Signpassword)
         sNama = findViewById<EditText>(R.id.Signnama)
         sEmail = findViewById<EditText>(R.id.Signemail)
+        toSignIn = findViewById(R.id.backSignIn)
+
+        toSignIn.setOnClickListener {
+            val signIn = Intent(this@SignUpActivity, SignInActivity::class.java)
+            startActivity(signIn)
+        }
 
         bSignUp.setOnClickListener {
             val usernameSign = sUsername.text.toString().trim()

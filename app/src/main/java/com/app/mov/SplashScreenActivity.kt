@@ -5,21 +5,22 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.view.View
+import android.view.animation.AnimationUtils
+import android.widget.ImageView
 import com.app.mov.onboarding.OnboardingOneActivity
 
 class SplashScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
-        actionBar?.hide()
         setContentView(R.layout.activity_splash_screen)
 
-        //durasi muncul splash screen
-        var handler = Handler()
-        handler.postDelayed({
-            var intent = Intent(this,OnboardingOneActivity::class.java)
-            startActivity(intent)
+        val backgroundImg : ImageView = findViewById(R.id.imageView)
+        val sideAnimation = AnimationUtils.loadAnimation(this, R.anim.slide)
+        backgroundImg.startAnimation(sideAnimation)
+
+        Handler().postDelayed({
+            startActivity(Intent(this, OnboardingOneActivity::class.java))
             finish()
-        }, 5000)
+        }, 3000)
     }
 }
